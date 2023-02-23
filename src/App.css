@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html,
+body {
+    color: white;
+    background-color: #252525;
+    font-family: sans-serif;
+    margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1 {
+    color: #252525;
+    font-size: 40px;
+    font-family: 'Archivo Black', sans-serif;
+    text-align: center;
+    margin: 20px 0;
+    text-shadow: 2px 2px #b4b4b4;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.aplicacion-tareas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
-.App-link {
-  color: #61dafb;
+/* Lista de tareas */
+
+.tareas-lista-principal {
+    width: 550px;
+    min-height: 500px; /* tiene una altura minima para que cuando haya muchas tareas la altura se expanda */
+    background-color: rgb(247, 247, 247);
+    padding: 25px;
+    margin: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+    margin-top: 30px;
+    color: white;
+}
+
+@media only screen and (max-width: 768px) {
+    html,
+    body {
+        margin-top: 20px;
+        background-color: #b4b4b4;
+    }
+    .tareas-lista-principal {
+        width: 100%;
+        min-height: 550px;
+        margin: 0;
+    }
+    footer {
+        color: #252525;
+    }
 }
